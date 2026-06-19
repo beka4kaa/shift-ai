@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Calendar } from "lucide-react";
+import { ArrowRight, Calendar, Lock } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -40,8 +40,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mx-auto mt-6 max-w-xl text-base text-white/50 sm:text-lg"
         >
-          Трехдневный марафон для топовых талантов. 20–22 июня. Собери команду,
-          построй прототип на базе ИИ и поборись за главный приз.
+          Трехдневный ИИ-марафон для топовых талантов. 20–22 июня, Школа
+          «Маариф». Старт 20 июня в 09:00 — ниже финальная программа.
         </motion.p>
 
         {/* CTA-кнопки */}
@@ -51,18 +51,19 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row"
         >
-          <button className="group flex items-center gap-2 rounded-full bg-gradient-to-r from-accent to-accent-dark py-3 pl-7 pr-3 text-sm font-medium text-white shadow-glow transition-transform hover:scale-105">
-            Подать заявку
+          <a
+            href="#schedule"
+            className="group flex items-center gap-2 rounded-full bg-gradient-to-r from-accent to-accent-dark py-3 pl-7 pr-3 text-sm font-medium text-white shadow-glow transition-transform hover:scale-105"
+          >
+            Смотреть расписание
             <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20">
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </span>
-          </button>
-          <a
-            href="#schedule"
-            className="rounded-full border border-white/15 bg-white/5 px-7 py-3 text-sm font-medium text-white backdrop-blur-md transition-colors hover:bg-white/10"
-          >
-            Смотреть расписание
           </a>
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-medium text-white/60 backdrop-blur-md">
+            <Lock className="h-4 w-4 text-accent" />
+            Регистрация закрыта
+          </span>
         </motion.div>
       </div>
     </section>

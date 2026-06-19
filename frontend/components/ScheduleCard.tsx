@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Clock, ArrowRight } from "lucide-react";
+import { Clock } from "lucide-react";
 import type { ScheduleDay } from "@/lib/types";
 
 interface ScheduleCardProps {
@@ -60,24 +60,6 @@ export default function ScheduleCard({ day, index }: ScheduleCardProps) {
           <span className="text-3xl font-bold text-white">{day.date}</span>
           <span className="text-sm text-white/40">/ {day.title}</span>
         </div>
-
-        {/* CTA внутри карточки */}
-        <button
-          className={`mt-6 flex w-full items-center justify-between rounded-full px-5 py-3 text-sm font-medium transition-transform duration-200 hover:scale-[1.02] ${
-            highlighted
-              ? "bg-white text-black"
-              : "bg-white/5 text-white hover:bg-white/10"
-          }`}
-        >
-          Смотреть программу
-          <span
-            className={`flex h-7 w-7 items-center justify-center rounded-full ${
-              highlighted ? "bg-accent text-white" : "bg-accent text-white"
-            }`}
-          >
-            <ArrowRight className="h-4 w-4" />
-          </span>
-        </button>
 
         {/* Список активностей с иконками часов */}
         <ul className="mt-7 space-y-3.5">

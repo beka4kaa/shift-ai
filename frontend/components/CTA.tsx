@@ -14,32 +14,38 @@ export default function CTA() {
           transition={{ duration: 0.5 }}
         >
           <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs text-white/70 backdrop-blur-md">
-            Регистрация открыта
+            Регистрация закрыта
           </span>
 
           <h2 className="mt-6 text-4xl font-bold leading-tight text-white sm:text-5xl">
-            Готов перестать смотреть
-            <br />и начать создавать?
+            Старт уже близко.
+            <br />Готов показать результат?
           </h2>
 
           <p className="mx-auto mt-5 max-w-md text-white/50">
-            Места ограничены. Собери команду и запусти свой ИИ-проект уже на этой
-            неделе.
+            Приём заявок завершён. Вся финальная программа — выше. Увидимся 20
+            июня в 09:00 в Школе «Маариф».
           </p>
 
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <button className="group flex items-center gap-2 rounded-full bg-gradient-to-r from-accent to-accent-dark py-3 pl-7 pr-3 text-sm font-medium text-white shadow-glow transition-transform hover:scale-105">
-              Участвовать
+            <a
+              href="#schedule"
+              className="group flex items-center gap-2 rounded-full bg-gradient-to-r from-accent to-accent-dark py-3 pl-7 pr-3 text-sm font-medium text-white shadow-glow transition-transform hover:scale-105"
+            >
+              Смотреть расписание
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20">
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </span>
-            </button>
-            <button className="flex items-center gap-2 rounded-full border border-white/15 bg-white/5 py-3 pl-7 pr-3 text-sm font-medium text-white backdrop-blur-md transition-colors hover:bg-white/10">
-              Стать партнёром
+            </a>
+            <a
+              href="#contacts"
+              className="flex items-center gap-2 rounded-full border border-white/15 bg-white/5 py-3 pl-7 pr-3 text-sm font-medium text-white backdrop-blur-md transition-colors hover:bg-white/10"
+            >
+              Связаться с нами
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-accent">
                 <ArrowRight className="h-4 w-4" />
               </span>
-            </button>
+            </a>
           </div>
         </motion.div>
       </div>

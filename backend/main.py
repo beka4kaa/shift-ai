@@ -42,8 +42,8 @@ SCHEDULE: list[ScheduleDay] = [
         activities=[
             Activity(time="09:00 – 10:00", title="Сбор участников и регистрация на месте"),
             Activity(time="10:00 – 10:30", title="Официальное открытие. Вводное слово (Бекжан)"),
-            Activity(time="10:30 – 11:30", title="Лекция: Нурзат Тынымбек кызы (Lead BA, EPAM)"),
-            Activity(time="11:40 – 12:40", title="Лекция: Денис Павлов (ML Engineer, The Cramer Project)"),
+            Activity(time="10:30 – 11:30", title="Время для работы"),
+            Activity(time="11:40 – 12:40", title="Лекция: Нурзат Тынымбек кызы (Lead BA, EPAM)"),
             Activity(time="13:00 – 13:50", title="Лекция: Игорь Чемеркин (основатель AI in KG)"),
             Activity(time="13:50 – 14:30", title="Брифинг: рабочие зоны, старт и правила чекпоинта"),
             Activity(time="14:30 – 18:00", title="Самостоятельная работа команд"),
